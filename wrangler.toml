@@ -1,0 +1,9 @@
+name = "img"  # Worker 名称
+main = "worker.js"  # Worker 脚本的入口文件
+
+[build]
+command = "npm install"  # 需要时安装依赖
+
+[[r2_buckets]]
+binding = "MY_BUCKET"  # 在 Worker 中使用的绑定变量名
+bucket_name = "end"  # 您的 R2 存储桶名称
